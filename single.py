@@ -1,4 +1,14 @@
-  import streamlit as st
+  import streamlit as st;st.markdown("""
+  <h1>RAG Application</h1>
+  <p>This is a simplified version due to platform limitations</p>
+  <p>In a full RAG application, you would:</p>
+  <ol>
+    <li>Upload documents</li>
+    <li>Process them for retrieval</li>
+    <li>Ask questions</li>
+    <li>Get answers based on the document content</li>
+  </ol>
+  """, unsafe_allow_html=True)
   st.title("RAG Application")
   api_key = st.sidebar.text_input("API Key",type="password")
   uploaded_file = st.sidebar.file_uploader("Upload Document", type=["docx"])
